@@ -1,0 +1,33 @@
+{
+  "name": "react-theme",
+  "version": "1.0.0",
+  "description": "This is a React Theme for drupal",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --watch --mode development",
+    "build": "webpack --watch --mode production",
+    "sass": "sass --watch sass/custom.scss:dist/custom.css",
+    "start": "npm-run-all -p build sass"
+  },
+  "author": "Yoel Ribero",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "file-loader": "^6.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
